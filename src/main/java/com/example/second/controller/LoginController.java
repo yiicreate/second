@@ -29,7 +29,7 @@ public class LoginController {
 
     @PostMapping("/login")
     public User doLogin(@RequestParam("code") String code) throws IOException {
-        String openid = "oPX645P4TgwSLpwsYEr91yCOWs9Q";//weChatUtil.getOpenId(code);
+        String openid = weChatUtil.getOpenId(code);
         if(openid == null){
             return  null;
         }
