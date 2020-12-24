@@ -36,7 +36,7 @@ public class InterfaceResolver implements HandlerMethodArgumentResolver {
 
     @Override
     public boolean supportsParameter(MethodParameter parameter) {
-        return parameter.hasParameterAnnotation(CurrentOperator.class);//parameter.getParameterType().isAssignableFrom(User.class)
+        return parameter.hasParameterAnnotation(CurrentOperator.class);//parameter.getParameterType().isAssignableFrom(SUser.class)&&
     }
 
     @Override
